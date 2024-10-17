@@ -37,6 +37,13 @@ function draw() {
     mCircle.x = mCircle.x + mCircle.dx;
     mCircle.y = mCircle.y + mCircle.dy;
 
-   
+
+    //something is wrong with the below code, check later
+    if (mCircle.x < 0 || mCircle.x > width) { // || means or
+      mCircle.x = random(width); 
+  }  
+  if (mCircle,y < 0 || mCircle.y > height) {
+    mCircle.y = random(height);
+  }
   }  
 }
